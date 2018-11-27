@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MySite.master.cs" Inherits="Webby.MySite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="Default.aspx">Home</a>
+            </li>
+            <li>
+                <a href="Page4.aspx">Page 4</a>
+            </li>
+        </ul>
+    </nav>
+    <form id="form1" runat="server">
+        <h1>This is my Master Page</h1>
+        <div>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
