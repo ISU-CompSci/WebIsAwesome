@@ -69,10 +69,12 @@
   <ItemGroup>
     <Content Include="Default-old.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Page2.aspx" />
     <Content Include="Page3.aspx" />
     <Content Include="Page4.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WhoAmI.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default-old.aspx.cs">
@@ -88,6 +90,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MySite.Master.cs">
       <DependentUpon>MySite.Master</DependentUpon>
@@ -118,6 +127,13 @@
       <DependentUpon>Page4.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WhoAmI.aspx.cs">
+      <DependentUpon>WhoAmI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WhoAmI.aspx.designer.cs">
+      <DependentUpon>WhoAmI.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MySite.Master" />
@@ -128,6 +144,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyClasses\MyClasses.csproj">
+      <Project>{8a75c4d3-6325-495c-af9c-958fa1d7c052}</Project>
+      <Name>MyClasses</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

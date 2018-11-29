@@ -17,6 +17,12 @@
             <li>
                 <a href="Page4.aspx">Page 4</a>
             </li>
+            <li>
+                <a href="Login.aspx">Login</a>
+            </li>
+            <li>
+                <a href="WhoAmI.aspx">WhoAmI</a>
+            </li>
         </ul>
     </nav>
     <form id="form1" runat="server">

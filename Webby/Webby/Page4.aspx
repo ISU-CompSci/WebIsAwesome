@@ -3,4 +3,5 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     This is Page 4
+     <asp:Table ID="tblPeoples" runat="server"></asp:Table>
 </asp:Content>
